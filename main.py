@@ -41,7 +41,7 @@ izquierda izquierda abajo abajo abajo
 """.strip()
 
 PRUEBAS = [
-    ("1. Solución completa correcta (Grupo 10)", PROGRAMA, "COMPLETADA"),
+    ("1. Solución completa correcta", PROGRAMA, "COMPLETADA"),
     ("2. Regreso con orden que no es inversa", "viaje arriba agarrar izquierda soltar finviaje", "RECHAZO_AP"),
     ("3. soltar antes de terminar el regreso", "viaje arriba arriba agarrar abajo soltar finviaje", "RECHAZO_AP"),
     ("4. Viaje sin cierre finviaje", "viaje arriba agarrar abajo soltar", "RECHAZO_AP"),
@@ -49,7 +49,7 @@ PRUEBAS = [
     ("6. Aceptado por AP, intenta atravesar obstáculo (5,3)", "viaje derecha derecha arriba agarrar abajo izquierda izquierda soltar finviaje", "ERROR_FISICO"),
     ("7. Aceptado por AP, intenta agarrar en celda vacía (5,1)", "viaje arriba agarrar abajo soltar finviaje", "ERROR_FISICO"),
     ("8. Aceptado y ejecutable, pero no alcanza la meta", "derecha derecha derecha derecha derecha viaje arriba arriba arriba agarrar abajo abajo abajo soltar finviaje", "OBJETIVO_NO_ALCANZADO"),
-    ("9. Borde: token desconocido", "derecha saltar viaje arriba agarrar abajo soltar finviaje", "ERROR_ENTRADA"),
+    ("9. Borde: token desconocido", "derecha saltar viaje arriba agarrar abajo soltar finviaje", "ERROR_LEXICO"),
     ("10. Borde: entrada vacía", "", "RECHAZO_AP"),
     ("11. Borde: salida de la grilla (6,0)", "viaje izquierda agarrar derecha soltar finviaje", "ERROR_FISICO"),
 ]

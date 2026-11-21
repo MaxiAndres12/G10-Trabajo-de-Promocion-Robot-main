@@ -74,7 +74,7 @@ def ejecutarPrograma(texto_programa: str) -> ResultadoEjecucion:
     entradas, error_entrada = validarLenguaje(texto_programa)
     if error_entrada is not None:
         return ResultadoEjecucion(
-            categoria="ERROR_ENTRADA",
+            categoria="ERROR_LEXICO",
             mensaje= error_entrada,
             registros=[],
             cajas_finales= set(CAJAS_INICIALES),

@@ -6,3 +6,5 @@
     .venv\Scripts\activate
 3) instalar automata-lib
     pip install automata-lib
+4) Para ejecutar el programa colocar el siguiente comando en la terminal
+    py main.py
